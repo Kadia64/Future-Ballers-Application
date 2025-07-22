@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-fba-gold: #cd9933;
+  --color-fba-gray: #808080;
+  --color-fba-black: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Custom color utilities for FBA */
+.bg-fba-gold {
+  background-color: #cd9933;
+}
+
+.bg-fba-gray {
+  background-color: #808080;
+}
+
+.bg-fba-black {
+  background-color: #000000;
+}
+
+.text-fba-gold {
+  color: #cd9933;
+}
+
+.text-fba-gray {
+  color: #808080;
+}
+
+.text-fba-black {
+  color: #000000;
+}
+
+.border-fba-gold {
+  border-color: #cd9933;
+}
+
+.border-fba-gray {
+  border-color: #808080;
+}
+
+.border-fba-black {
+  border-color: #000000;
+}
+
+.ring-fba-gold {
+  --tw-ring-color: #cd9933;
+}
+
+.hover\:bg-fba-gold:hover {
+  background-color: #cd9933;
+}
+
+.hover\:bg-fba-gray:hover {
+  background-color: #808080;
+}
+
+.hover\:bg-fba-black:hover {
+  background-color: #000000;
+}
+
+.hover\:text-fba-gold:hover {
+  color: #cd9933;
+}
+
+.hover\:text-fba-gray:hover {
+  color: #808080;
+}
+
+.hover\:text-fba-black:hover {
+  color: #000000;
+}
+
+.focus\:ring-fba-gold:focus {
+  --tw-ring-color: #cd9933;
+}
