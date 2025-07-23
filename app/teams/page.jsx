@@ -10,10 +10,10 @@ export default function TeamsPage() {
   const teams = dummyTeams[gender];
 
   return (
-    <div className="container mx-auto p-6 bg-fba-gray min-h-[calc(100vh-64px)] font-inter">
+    <div className="container mx-auto p-6 bg-fba-gray min-h-[calc(100vh-64px)] font-inter flex flex-col">
       <h2 className="text-4xl font-extrabold text-center text-gray-900 mb-8">Our Teams</h2>
 
-      <div className="flex justify-center mb-8 space-x-4">
+      <div className="flex justify-center mb-12 space-x-4">
         <button
           onClick={() => setGender('boys')}
           className={`px-6 py-3 rounded-lg text-lg font-semibold transition duration-300 ${
@@ -32,7 +32,10 @@ export default function TeamsPage() {
         </button>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      <div className="bg-black p-2 mb-8 slanted-box-outer">
+        <div className="bg-fba-gold p-[2px] slanted-box-inner">
+          <div className="bg-fba-gray p-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         {teams.length > 0 ? (
           teams.map((team) => (
             <Link
@@ -57,6 +60,9 @@ export default function TeamsPage() {
             <p className="text-lg text-gray-500 mt-2">Please check back later!</p>
           </div>
         )}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

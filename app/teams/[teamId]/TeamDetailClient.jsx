@@ -28,7 +28,7 @@ export default function TeamDetailClient({ team, teamId }) {
       <div className="flex items-center mb-8">
         <Link
           href="/teams"
-          className="flex items-center text-fba-gold hover:text-fba-black transition duration-300 mr-4"
+          className="flex items-center text-black hover:underline hover:decoration-fba-gold hover:decoration-2 transition duration-300 mr-4"
         >
           <ChevronLeft className="w-6 h-6 mr-1" /> Back to Teams
         </Link>

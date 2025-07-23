@@ -9,13 +9,7 @@ const Footer = () => {
             © 2025 Future Ballers Association. All rights reserved.
           </p>
           <div className="mt-4 space-x-6">
-            <a href="#" className="text-gray-400 hover:text-fba-gold text-sm transition-colors">
-              Privacy Policy
-            </a>
-            <span className="text-gray-400">•</span>
-            <a href="#" className="text-gray-400 hover:text-fba-gold text-sm transition-colors">
-              Terms of Service
-            </a>
+           
           </div>
         </div>
       </div>

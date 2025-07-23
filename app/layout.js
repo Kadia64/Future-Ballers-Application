@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Future Ballers Association",
+  title: "FBA | Home",
   description: "Premier destination for youth basketball in Illinois",
   icons: {
     icon: '/future-ballers-logo-2.png',
@@ -21,9 +21,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} font-inter antialiased bg-fba-gray`}>
+      <body className={`${inter.variable} font-inter antialiased bg-fba-gray overflow-x-hidden`}>
         <Navbar />
-        <main className="min-h-screen pt-[73px]">{children}</main>
+        <main className="min-h-screen pt-20">{children}</main>
         <Footer />
       </body>
     </html>
