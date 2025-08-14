@@ -61,11 +61,15 @@ export default function EventDetailClient({ event, eventId }) {
           <p><strong className="font-semibold text-gray-900">Phone:</strong> {event.details.manager.phone}</p>
           <p><strong className="font-semibold text-gray-900">Email:</strong> {event.details.manager.email}</p>
         </div>
-        <div className="mt-8 text-center">
-          <button className="px-8 py-4 bg-fba-gold text-fba-black text-xl font-semibold rounded-lg shadow-lg hover:bg-fba-black hover:text-fba-gray transition transform hover:scale-105 duration-300">
-            Register Now
-          </button>
-        </div>
+        {event.registrationUrl && (
+          <div className="mt-8 text-center">
+            <Link href={event.registrationUrl} target="_blank" rel="noopener noreferrer">
+              <button className="px-8 py-4 bg-fba-gold text-fba-black text-xl font-semibold rounded-lg shadow-lg hover:bg-fba-black hover:text-fba-gray transition transform hover:scale-105 duration-300">
+                Register Now
+              </button>
+            </Link>
+          </div>
+        )}
       </div>
     </div>
   );

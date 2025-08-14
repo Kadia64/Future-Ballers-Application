@@ -101,19 +101,24 @@ export const dummyTeams = {
 export const dummyEvents = {
   boys: [
     { id: 'e1', type: 'tournament', name: '1 Day Slam', time: 'April 25-26 2026', image: '/tournaments/1-day-slam.png',
-      details: { ageGroup: '--', date: 'April 25-26 2026', location: '--', entryFee: '--', manager: { name: '--', phone: '--', email: '--' } }
+      details: { ageGroup: '--', date: 'April 25-26 2026', location: '--', entryFee: '--', manager: { name: '--', phone: '--', email: '--' } },
+      registrationUrl: 'https://google.com' // Replace with actual registration URL
     },
     { id: 'e5', type: 'tournament', name: 'Autism Awareness Tournament', time: 'April 11-12, 2026', image: '/tournaments/autism-awareness.png',
-      details: { ageGroup: '--', date: 'April 11-12, 2026', location: '--', entryFee: '--', manager: { name: '--', phone: '--', email: '--' } }
+      details: { ageGroup: '--', date: 'April 11-12, 2026', location: '--', entryFee: '--', manager: { name: '--', phone: '--', email: '--' } },
+      registrationUrl: 'https://uat.sssl.io/O0PLzO' // Replace with actual registration URL
     },
     { id: 'e6', type: 'tournament', name: 'Dome Debut Classic', time: 'March 28-29, 2026', image: '/tournaments/dome-debut-classic.png',
-      details: { ageGroup: '--', date: 'March 28-29, 2026', location: '--', entryFee: '--', manager: { name: '--', phone: '--', email: '--' } }
+      details: { ageGroup: '--', date: 'March 28-29, 2026', location: '--', entryFee: '--', manager: { name: '--', phone: '--', email: '--' } },
+      registrationUrl: 'https://uat.sssl.io/4Q3PZR' // Replace with actual registration URL
     },
     { id: 'e2', type: 'tournament', name: 'Top 100 Classic', time: 'August 8-9, 2026', image: '/tournaments/top-100-classic.png',
-      details: { ageGroup: '--', date: 'August 8-9, 2026', location: '--', entryFee: '--', manager: { name: '--', phone: '--', email: '--' } }
+      details: { ageGroup: '--', date: 'August 8-9, 2026', location: '--', entryFee: '--', manager: { name: '--', phone: '--', email: '--' } },
+      registrationUrl: 'https://uat.sssl.io/46kvlO' // Replace with actual registration URL
     },
     { id: 'e3', type: 'tournament', name: 'Nationals', time: 'July 26-27, 2026', image: '/tournaments/nationals.png',
-      details: { ageGroup: '--', date: 'July 26-27, 2026', location: '--', entryFee: '--', manager: { name: '--', phone: '--', email: '--' } }
+      details: { ageGroup: '--', date: 'July 26-27, 2026', location: '--', entryFee: '--', manager: { name: '--', phone: '--', email: '--' } },
+      registrationUrl: 'https://uat.sssl.io/Xw7yoX' // Replace with actual registration URL
     },
   ]
 };
