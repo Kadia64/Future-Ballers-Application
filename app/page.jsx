@@ -126,8 +126,13 @@ export default function Home() {
             Here, you can easily explore top player rankings across the state, discover exciting upcoming tournaments and events, and connect with a vibrant community of AAU teams. Our platform makes it simple for team managers to register their teams and organize thrilling competitions that showcase the future stars of basketball.
           </p>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
-            <Link href="/teams" className="inline-block">
+            <Link href="/register" className="inline-block">
               <button className="px-8 py-4 bg-fba-gold text-white text-lg font-semibold rounded-lg shadow-lg hover:bg-fba-black transition transform hover:scale-105 duration-300">
+                Register Now
+              </button>
+            </Link>
+            <Link href="/teams" className="inline-block">
+              <button className="px-8 py-4 bg-fba-black text-white text-lg font-semibold rounded-lg shadow-lg hover:bg-fba-gold transition transform hover:scale-105 duration-300">
                 View Teams
               </button>
             </Link>

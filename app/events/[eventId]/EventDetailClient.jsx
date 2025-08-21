@@ -63,7 +63,7 @@ export default function EventDetailClient({ event, eventId }) {
         </div>
         {event.registrationUrl && (
           <div className="mt-8 text-center">
-            <Link href={event.registrationUrl} target="_blank" rel="noopener noreferrer">
+            <Link href={`/register/${eventId}`}>
               <button className="px-8 py-4 bg-fba-gold text-fba-black text-xl font-semibold rounded-lg shadow-lg hover:bg-fba-black hover:text-fba-gray transition transform hover:scale-105 duration-300">
                 Register Now
               </button>
